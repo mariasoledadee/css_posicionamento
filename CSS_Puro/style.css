@@ -40,6 +40,20 @@ body{
     font-size: 1.125em;
     margin-right: 10px;
 }
+/*Responsividade menu*/
+@media only screen and (max-width: 739px){
+    .menu{
+        text-align: center;
+    }
+    a.menu_logo{
+        float: none;
+        margin: 0 auto;
+    }
+    .menu_nav{
+        float: none;
+        clear: both;
+    }
+}
 
 /*intro*/
 .intro{
@@ -64,6 +78,12 @@ body{
 .intro p{
     font-style: italic;
     font-size: 1.125em;
+}
+/*Responsividade intro*/
+@media only screen and (max-width: 739px){
+    .intro{
+        padding: 60px 0;
+    }
 }
 
 /*Sobre*/
@@ -113,6 +133,24 @@ body{
     text-align: center;
     margin: 20px auto;
     max-width: 460px;
+}
+/*Responsividade sobre*/
+@media (min-width: 740px) and (max-width: 980px){
+    .sobre_container{
+        max-width: 720px;
+    }
+    .sobre_item{
+        width: 340px;
+    }
+}
+@media (max-width: 739px){
+    .sobre_container{
+        max-width: 300px;
+    }
+    .sobre_item{
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 
 /*Produtos*/
@@ -178,6 +216,24 @@ body{
     margin: 20px auto 0;
     padding: 15px 0;
 }
+/*Responsividade produtos*/
+@media (min-width: 740px) and (max-width: 980px){
+    .produtos_container{
+        max-width: 720px;
+    }
+    .produtos_item{
+        width: 220px;
+    }
+}
+@media (max-width: 739px){
+    .produtos_container{
+        max-width: 300px;
+    }
+    .produtos_item{
+        margin: 10px auto 0;
+    }
+}
+ 
 
 /*Locais*/
 .locais{
@@ -222,6 +278,24 @@ body{
     border: 3px solid;
     color: #252525;
     padding: 10px 20px;
+}
+/*Responsividade Locais*/
+@media (min-width: 740px) and (max-width: 980px){
+    .locais{
+        max-width: 720px;
+    }
+    .locais_item > div, locais_item img{
+        width: 340px;
+    }
+}
+@media (max-width: 739px){
+    .locais{
+        max-width: 300px;
+    }
+   .locais_item img{
+       width: 300px;
+       margin: 0;
+   }
 }
 
 /*NewsLetter*/
@@ -280,6 +354,30 @@ body{
     border: none;
     cursor: pointer;
 }
+/*Responsividade NewsLetter*/
+@media (min-width: 740px) and (max-width: 980px){
+    .assine_container{
+        max-width: 720px;
+    }
+    .assine_info{
+        width: 340px;
+    }
+    .assine form{
+        width: 340px;
+    }
+    .assine input{
+        width: 340px;
+    }
+}
+@media (max-width: 739px){
+    .assine_container{
+        max-width: 300px;
+    }
+    .assine_info, .assine form, .assine input{
+        width: 340px;
+        margin: 10px 0 0;
+    }
+}
 
 /*Footer*/
 .footer{
@@ -305,4 +403,18 @@ body{
     float: right;
     margin: 0 10px;
     display: block;
+}
+/*Responsividade Footer*/
+@media (max-width: 739px){
+    .footer_container{
+        max-width: 300px;
+    }
+    .footer p{
+        float: none;
+        margin: 0;
+    }
+    .footer img{
+       float: none;
+       margin: 20px 0;
+    }
 }
